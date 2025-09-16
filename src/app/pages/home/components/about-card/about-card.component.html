@@ -1,0 +1,29 @@
+<div class="card" [ngClass]="getPositionClass()" (click)="handleSelectCard()">
+    <div class="head">
+        @if (card.gif.includes('gif')) {
+        <img [src]="card.gif" alt="">
+        } @else {
+        <video autoplay loop muted playsinline>
+            <source [src]="card.gif" type="video/mp4">
+            not support
+        </video>
+        }
+        @if (card.title) {
+        <h2>{{card.title}}</h2>
+        }
+    </div>
+    <div class="body">
+        <img [src]='card.logoSrc' alt="">
+        <div class="content">
+            <h3>{{card.content.title}}</h3>
+            <p>{{card.content.body}}</p>
+        </div>
+        <div class="action">
+            <app-jump-in-button></app-jump-in-button>
+        </div>
+
+        @for (vector of card.vectors; track $index) {
+        <img [src]="vector.vectorSrc" alt="" [ngClass]="'vector-' + vector.dir">
+        }
+    </div>
+</div>

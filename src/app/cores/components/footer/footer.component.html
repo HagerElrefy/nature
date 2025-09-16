@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<footer>
+    <div>
+        <div class="logo">
+            <img src="assets/images/footer/image 1.png" alt="logo">
+        </div>
+        <p>
+            Nature for Environmental and Agricultural Solutions L.L.C is the expertise house of
+            terrestrial and marine biodiversity based in the city of Abu Dhabi. We specialize in
+            sustainable planting and managing mangrove trees and reserves.
+        </p>
+        <div class="socials">
+            <img src="assets/images/footer/skill-icons_facebook.png" alt="skill-icons_facebook">
+            <img src="assets/images/footer/skill-icons_instagram.png" alt="skill-icons_instagram">
+            <img src="assets/images/footer/skill-icons_tiktok.png" alt="skill-icons_tiktok">
+            <img src="assets/images/footer/skill-icons_youtube.png" alt="skill-icons_youtube">
+        </div>
+
+    </div>
+    <div class="quick-access">
+        <h6>
+            Quick actions
+        </h6>
+        @for (link of quickActionsLinks; track $index) {
+        <a>{{link}}</a>
+        }
+    </div>
+</footer>

@@ -1,0 +1,9 @@
+<div class="impact-card">
+    <div class="media">
+        <img [src]="card.logo" [alt]="card.title">
+    </div>
+    <div class="body">
+        <p [id]="`color-${card.id}`">{{cardCounter()}}</p>
+        <p>{{card.title}}</p>
+    </div>
+</div>

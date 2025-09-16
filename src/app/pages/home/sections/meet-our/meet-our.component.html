@@ -1,0 +1,26 @@
+<section class="meet-our">
+
+
+    <img src="assets/images/pages/Frame 560.png" alt="Frame 560" class="before">
+    <app-sections-title [isAnimated]="true" [animationDir]="'up'">
+        Meet our Strategic Parteners, <br> Who Inspire our Purpose
+    </app-sections-title>
+    <div class="sliders-container wow animate__animated animate__fadeInUp">
+        <div class="slider-1">
+            @for (company of companies; track $index) {
+            <div class="img-container">
+                <img [src]="company" [alt]="company.split('/').pop()" />
+            </div>
+            }
+        </div>
+
+        <div class="slider-2">
+            @for (company of companies; track $index) {
+            <div class="img-container">
+                <img [src]="company" [alt]="company.split('/').pop()" />
+
+            </div>
+            }
+        </div>
+    </div>
+</section>

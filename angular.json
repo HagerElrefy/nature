@@ -32,9 +32,14 @@
               }
             ],
             "styles": [
+              "node_modules/@hellouxpavel/cssanimation/dist/cssanimation.min.css",
+              "node_modules/@hellouxpavel/cssanimation/dist/cssanimation-utility.min.css",
+              "node_modules/animate.css/animate.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/wowjs/dist/wow.js"
+            ]
           },
           "configurations": {
             "production": {

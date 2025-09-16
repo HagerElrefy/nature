@@ -1,9 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+// Individual effect
+@import "../node_modules/@hellouxpavel/cssanimation/dist/cssanimation.min.css";
+@import "../node_modules/@hellouxpavel/cssanimation/dist/cssanimation-utility.min.css";
+
+// @import 'primeng/resources/themes/lara-light-blue/theme.css';
+// @import 'primeng/resources/primeng.min.css';
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 * {
     box-sizing: border-box;
     margin: 0;
+
+}
+
+section {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    position: relative;
 }
 
 
@@ -28,6 +46,50 @@
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../public/assets/fonts/inter/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../public/assets/fonts/inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../public/assets/fonts/inter/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// \public\assets\fonts\bryant\fonts
+@font-face {
+    font-family: 'Bryant';
+    src: url('../public/assets/fonts/bryant/fonts/fonnts.com-Bryant_Regular_Alternate.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant';
+    src: url('../public/assets/fonts/bryant/fonts/fonnts.com-Bryant_Condensed_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant';
+    src: url('../public/assets/fonts/bryant/fonts/fonnts.com-Bryant_Regular_Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
 
 
 
